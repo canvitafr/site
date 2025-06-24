@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.header{
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: rgb(204, 223, 248);
+}
+.header__div--img{
+    width: 8rem;
+}
+.header__div--h1{
+    margin-left: 15px;
+}
+.nav__a{
+    font-size:large;
+    margin: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+/* ----- */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.main__div{
+    text-align: justify;
+    margin: 8px;
+}
+.div--p{
+    width: 70%;
+}
+.main__form{
+    width: 30% auto;
+}
+.form__fieldset{
+    font-size: larger;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 3px solid #0000;
+    background: 
+    linear-gradient(white, #111) padding-box,
+    linear-gradient(#09f, red) border-box;
+}
+.fieldset__label{
+    margin: 3px;
+    padding: 6px;
+}
+.fieldset__input{
+    width: 20rem;
+    padding: 4px;
+    border-radius: 5px;
+    border: 2px solid #09f;
+}
+.fieldset--textarea{
+    width: 20rem;
+    padding: 4px;
+    border-radius: 5px;
+    border: 2px solid #09f;
+}
+.fieldset--button{
+    font-size: inherit;
+    padding: 4px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 2px solid #09f;
+}
+/* ---- */
+.footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div__a{
+    color: white;
+    
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Maquetacion */
+.contenedor__grid > *{
+    padding: 10px;
+
+}
+.contenedor__grid{
+    display: grid;
+    gap: 10px;
+    grid-template:
+    "header" 130px
+    "nav" 60px
+    "main" auto
+    "aside" auto
+    "footer" 70px
+    ;
+}
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+    background-color: rgb(204, 223, 248);
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+}
+.aside{
+    grid-area: aside;
+}
+.footer{
+    grid-area: footer;
+}
+
+/* Contenido */
+.header--img{
+    width: 110px;
+}
+.nav__a{
+    text-decoration: none;
+    color: #09f;
+}
+.main__div{
+    display: flex;
+    align-items: center;
+}
+.div--img{
+    max-width: 120px;
+    height: 110px;
+}
+.div__article{
+    padding: 1rem;
+    width: 300px;
+}
+/* ASIDE */
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.div__label{
+    padding: 3px;
+    margin: 3px;
+}
+.div__input{
+    padding: 4px;
+    margin: 3px;
+}
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(37, 37, 37);
+}
+.div__a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width:600px){
+    .contenedor__grid{
+    grid-template:
+    "header header" 130px
+    "nav nav" 60px
+    "main aside" auto
+    "footer footer" 70px /
+    auto 280px
+    ;
+    }
+}
+@media (min-width:900px){
+    .contenedor__grid{
+    grid-template:
+    "header header header" 130px
+    "nav    nav    nav" 60px  
+    "main   main   aside" auto
+    "footer footer footer" 70px /
+    auto    auto   350px  
+    ;
+}
+}
